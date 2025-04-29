@@ -1,0 +1,9 @@
+{
+  "venv": ".venv",
+  "venvPath": ".",
+  "pythonVersion": "3.12",
+  "typeCheckingMode": "basic",
+  "useLibraryCodeForTypes": true,
+  "reportMissingImports": true,
+  "reportMissingTypeStubs": false
+}

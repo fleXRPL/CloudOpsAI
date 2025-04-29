@@ -1,0 +1,93 @@
+# CloudOpsAI Terraform Configuration
+# This file contains all configuration needed to deploy CloudOpsAI
+
+# AWS Configuration
+aws:
+  region: us-east-1
+  environment: dev # Options: dev, staging, prod
+
+  # AWS Account Configuration
+  accounts:
+    # Primary account where CloudOpsAI is deployed
+    primary:
+      id: "123456789012" # AWS Account ID
+      role: "CloudOpsAI-Admin" # IAM role to assume
+      profile: "default" # AWS profile to use
+
+    # Target accounts to monitor
+    targets:
+      - id: "123456789012" # Production account
+        name: "prod"
+        role: "CloudOpsAI-Monitor"
+        profile: "prod"
+        regions: # Regions to monitor in this account
+          - us-east-1
+          - us-west-2
+
+      - id: "210987654321" # Staging account
+        name: "staging"
+        role: "CloudOpsAI-Monitor"
+        profile: "staging"
+        regions:
+          - us-east-1
+
+      - id: "345678901234" # Development account
+        name: "dev"
+        role: "CloudOpsAI-Monitor"
+        profile: "dev"
+        regions:
+          - us-east-1
+
+# Project Configuration
+project:
+  name: cloudopsai
+  function_name: ai-noc-agent
+  config_bucket_name: ai-noc-agent-config
+
+# Network Configuration
+network:
+  vpc:
+    cidr: 10.0.0.0/16
+    public_subnets:
+      - 10.0.1.0/24
+      - 10.0.2.0/24
+    private_subnets:
+      - 10.0.3.0/24
+      - 10.0.4.0/24
+    availability_zones:
+      - us-east-1a
+      - us-east-1b
+
+# Notification Configuration
+notifications:
+  alarm_actions: [] # List of SNS topic ARNs for alarm notifications
+  teams_webhook: "" # Microsoft Teams webhook URL
+  slack_webhook: "" # Slack webhook URL
+  pagerduty_key: "" # PagerDuty API key
+  email_from: "" # SES verified email address
+  email_recipients: # List of email addresses to notify
+    critical: [] # Critical severity notifications
+    high: [] # High severity notifications
+    medium: [] # Medium severity notifications
+    low: [] # Low severity notifications
+
+# AI Configuration
+ai:
+  bedrock_model: anthropic.claude-v2
+  q_application_id: "" # Amazon Q application ID
+
+# Monitoring Configuration
+monitoring:
+  log_retention_days: 30
+  metrics_retention_days: 15
+  dashboard_enabled: true
+  cross_account: true # Enable cross-account monitoring
+  centralized_logging: true # Send logs to primary account
+
+# Tags
+tags:
+  Environment: ${aws.environment}
+  Project: ${project.name}
+  ManagedBy: terraform
+  Owner: team-noc@company.com
+  CostCenter: it-ops-123
