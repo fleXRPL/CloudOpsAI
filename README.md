@@ -1,8 +1,6 @@
 # CloudOpsAI - AI NOC Agent
 
-<p align="center">
-  <img src="images/CloudOpsAI.png" width="400" alt="CloudOpsAI Logo" style="max-width: 100%; height: auto;"/>
-</p>
+![CloudOpsAI Logo](images/CloudOpsAI.png)
 
 ## Overview
 
