@@ -2,6 +2,17 @@
 
 ![CloudOpsAI Logo](images/CloudOpsAI.png)
 
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=fleXRPL_CloudOpsAI&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=fleXRPL_CloudOpsAI)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=fleXRPL_CloudOpsAI&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=fleXRPL_CloudOpsAI)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=fleXRPL_CloudOpsAI&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=fleXRPL_CloudOpsAI)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=fleXRPL_CloudOpsAI&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=fleXRPL_CloudOpsAI)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=fleXRPL_CloudOpsAI&metric=bugs)](https://sonarcloud.io/summary/new_code?id=fleXRPL_CloudOpsAI)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=fleXRPL_CloudOpsAI&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=fleXRPL_CloudOpsAI)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=fleXRPL_CloudOpsAI&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=fleXRPL_CloudOpsAI)
+[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=fleXRPL_CloudOpsAI&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=fleXRPL_CloudOpsAI)
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=fleXRPL_CloudOpsAI&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=fleXRPL_CloudOpsAI)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=fleXRPL_CloudOpsAI&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=fleXRPL_CloudOpsAI)
+
 ## Overview
 
 The AI NOC Agent is an innovative solution designed to transform traditional Network Operations Center (NOC) monitoring from a human-centric "eyes on glass" approach to an intelligent, automated system. This project emerged from our experience with traditional managed NOC services that, while effective, were costly and limited by human response times.
