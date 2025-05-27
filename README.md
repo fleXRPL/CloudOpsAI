@@ -11,7 +11,6 @@
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=fleXRPL_CloudOpsAI&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=fleXRPL_CloudOpsAI)
 [![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=fleXRPL_CloudOpsAI&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=fleXRPL_CloudOpsAI)
 [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=fleXRPL_CloudOpsAI&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=fleXRPL_CloudOpsAI)
-[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=fleXRPL_CloudOpsAI&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=fleXRPL_CloudOpsAI)
 
 ## Overview
 
